@@ -1,0 +1,24 @@
+.related-post {
+	margin-top: 3rem;
+	width: 100%;
+	&__list {
+		list-style-type: none;
+		display: flex;
+		margin-top: .5rem;
+	}
+	&__item {
+		width: 23%;
+		margin: 0 1%;
+		overflow: hidden;
+		img {
+			width: 100%;
+			height: auto;
+			transition: all 0.3s ease-in-out;
+		}
+		&:hover {
+			img {
+				transform: scale(1.1);
+			}
+		}
+	}
+}

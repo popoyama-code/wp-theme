@@ -1,0 +1,51 @@
+/* ------------------------------------------
+	ROOT
+--------------------------------------------- */
+:root {
+	// color
+	--GR1: linear-gradient(rgba(30, 30, 30, 0), rgba(30, 30, 30, 1.0));
+	--BA: #fbfbfb;
+	--BB: #F3D438;
+  --BK: #333;
+	--DK1:#ddd;
+	--DK2: #eee;
+	// size
+	--SBW: 250px;
+}
+body {
+	color: var(--BK);
+	background-color: var(--BA);
+	font-family: "Hiragino Kaku Gothic ProN","メイリオ", arial, sans-serif;
+	font-size: 62.5%
+}
+a {
+  text-decoration: none;
+  color: var(--BK);
+}
+.visible {
+  &--pc{
+	  display: none;
+  }
+}
+#root {
+	display: block;
+	width: 100%;
+}
+main {
+	display: block;
+	background-color: var(--BA);
+	padding: 1rem;
+	font-size: 1rem;
+}
+
+@media screen and (min-width:640px) {
+	#root {
+		display: flex;
+	}
+	main {
+		-webkit-box-flex:1;
+		-ms-flex-positive:1;
+		flex-grow:1;
+		padding: 3rem 0;
+	}	
+}

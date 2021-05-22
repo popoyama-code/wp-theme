@@ -1,0 +1,40 @@
+.comments-area {
+  background-color: var(--DK2);
+  border-radius: .5rem;
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  overflow: hidden;
+  &__author, &__comment {
+    padding: .5rem 1rem 0;
+    width: 100%;
+  }
+  &__author-form {
+    background-color: #fff;
+    border-radius: .25rem;
+    width: 100%;
+  }
+  &__comment-form {
+    background-color: #fff;
+    border-radius: .25rem;
+    width: 100%;
+  }
+  .comment-reply-title {
+    background-color: var(--DK1);
+    font-size: 1rem;
+    padding: .5rem 1rem;
+  }
+  .form-submit {
+    padding: .5rem 1rem;
+    text-align: center;
+    .submit {
+      background-color: var(--BK);
+      border-radius: 2rem;
+      color: #fff;
+      display: inline-block;
+      max-width: 160px;
+      height: 2rem;
+      width: 100%;
+    }
+  }
+}

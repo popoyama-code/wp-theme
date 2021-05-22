@@ -1,0 +1,28 @@
+/* ------------------------------------------
+	PAGER
+--------------------------------------------- */
+.pager {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-top: 3rem;
+}
+.page-numbers {
+	display: block;
+	min-width: 50px;
+	min-height: 50px;
+	line-height: 50px;
+	text-align: center;
+	background-color: var(--DK2);
+	border-radius: 50%;
+	font-size: 1rem;
+	color: #333;
+	margin: 0 0.5rem 0.5rem 0;
+	transition: all 0.3s ease-in-out;
+	&:hover {
+		background-color: var(--DK1);
+	}
+}
+.current {
+	background-color:var(--BB) !important;
+}

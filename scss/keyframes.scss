@@ -1,0 +1,38 @@
+/* ------------------------------------------
+  ANIMATION
+--------------------------------------------- */
+@keyframes tremble {
+	0%,
+	10%,
+	100% {
+	  transform: translate3d(0, 0, 0);
+	}
+  
+	20% {
+	  transform: skewX(10deg) skewY(10deg);
+	}
+  
+	30% {
+	  transform: skewX(-7deg) skewY(-7deg);
+	}
+  
+	40% {
+	  transform: skewX(5deg) skewY(5deg);
+	}
+  
+	50% {
+	  transform: skewX(-2deg) skewY(-2deg);
+	}
+  
+	60% {
+	  transform: skewX(1deg) skewY(1deg);
+	}
+  
+	70% {
+	  transform: skewX(0.5deg) skewY(0.5deg);
+	}
+  
+	80% {
+	  transform: skewX(-0.15deg) skewY(-0.15deg);
+	}
+}

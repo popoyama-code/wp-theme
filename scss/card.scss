@@ -1,0 +1,86 @@
+/* ------------------------------------------
+	記事カード
+--------------------------------------------- */
+.card {
+	border-radius: 0.5rem;
+	overflow: hidden;
+	width: 100%;
+  &--note {
+		background-color: var(--DK2);
+		border: solid 1px var(--DK1);
+		padding: 1.5rem;
+		min-height: 200px;
+	}
+	&--shadow {
+		box-shadow: rgba(51, 51, 51, 0.5) 0 0 15px;
+	}
+	&__thumbnail {
+		position: relative;
+		overflow: hidden;
+		img {
+			display: block;
+			width: 100%;
+			height: auto;
+		}
+	}
+	&__overlay {
+		display: flex;
+		flex-direction: column;
+		position: absolute;
+		padding: 0 0.5rem;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 999;
+		background: var(--GR1);
+		opacity: 0;
+		transform: translateY(10%);
+		transition: all 0.3s ease-in-out;
+    &:hover {
+      transform: translateY(0%);
+      opacity: 1;
+    }
+	}
+	&__metadata {
+		color: #fff;
+		margin-top: auto;
+	}
+	&__title {
+		font-size: 0.9rem;
+		background-color: #fff;
+		padding: 1rem;		
+	}
+	&__tag-list {
+		list-style-type: none;
+	}
+  &__tag-item {
+		border: solid 1px rgba(255, 255, 255, 0.3);
+		border-radius: 1rem;
+		display: inline-block;
+		font-size: 1rem;
+		margin: 0 0.5rem 0.5rem 0;
+		padding: 0.1rem 0.7rem;
+	}
+	&__heading {
+    font-size: 1rem;
+		margin-bottom: .9rem;
+	}
+	&__text {
+    font-size: 1rem;
+		margin-bottom: .9rem;
+	}
+}
+
+@media screen and (min-width:640px) {
+	.card {
+		width: 40%;
+		max-width: 360px;
+	}
+}
+
+@media screen and (min-width:1024px) {
+	.card {
+		width: 30%;
+	}
+}

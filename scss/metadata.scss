@@ -1,0 +1,51 @@
+.metadata {
+	margin-top: 1rem;
+	width: 100%;
+	&__title {
+		font-size: 1.1rem;
+	}
+	&__excerpt {
+		font-size: 0.9rem;
+		margin-bottom: 0.5rem;
+	}
+	&__tag-item {
+		display: inline-block;
+		margin: 0 0.5rem 0.5rem 0;
+		a {
+			border: solid 1px #ddd;
+			padding: 0.2rem 1rem;
+			border-radius: 1rem;
+		}
+	}
+  &__tag-link {
+    padding: 0.3rem 0.8rem;
+    background-color: var(--DK2);
+    :hover {
+      background-color: var(--DK1);
+			transition: all 0.3s ease-in-out;
+    }
+  }
+	&__tag-list {
+		list-style-type: none;
+		font-size: 0.9rem;
+		margin-top: .5rem;
+	}
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__category	{
+		a {
+			background-color:var(--BB);
+			border-radius: 1rem;
+			display: inline-block;
+			padding: 0.2rem 1rem;	
+		}
+	}
+	&__date {
+		color: #bbb;
+		font-size: 0.7rem;
+		margin-top: .5rem;
+	}
+}
