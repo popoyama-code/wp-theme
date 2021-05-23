@@ -1,0 +1,15 @@
+@mixin separator($width: 100%) {
+  display: block;
+  width: $width;
+  height: 1px;
+  margin: 2rem auto;
+}
+
+.separator {
+  @include separator();
+  background-color: rgba(30, 30, 30, 0.1);
+  &-head {
+    @include separator(2rem);
+    background-color: rgba(30, 30, 30, 0.3);
+  }
+}

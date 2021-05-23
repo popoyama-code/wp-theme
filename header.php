@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="jp">
+<html lang="ja">
   <head>
     <meta charset="utf-8">    
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -12,12 +12,12 @@
     <div id="root">
       <header>
         <nav role="navigation" aria-label="main-nav" class="nav-collapse" id="primary-menu">
-          <div class="elm-pc logo">
+          <div class="visible--pc logo">
             <a class="blog-logo" href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'title' ) ); ?>' rel='home'>
               <img class="logo__img" src="<?php bloginfo('template_directory'); ?>/img/logo.png">
             </a>
           </div>
-          <div class="elm-pc separator"></div>
+          <div class="visible--pc separator-head"></div>
           <?php 
           wp_nav_menu( array( 
             'theme_location' => 'main-menu',
@@ -25,8 +25,8 @@
             'fallback_cb' => ''
           ) ); 
           ?>
-          <div class="elm-pc separator"></div>
-          <div class="elm-pc sns">
+          <div class="visible--pc separator-head"></div>
+          <div class="visible--pc sns">
             <a class="sns__img-wrap" href="#">
               <img class="sns__img" src="<?php bloginfo('template_directory'); ?>/img/logo_icon_twitter.png">
             </a>
@@ -34,7 +34,7 @@
               <img class="sns__img" src="<?php bloginfo('template_directory'); ?>/img/logo_icon_fb.png">
             </a>
           </div>
-          <small class="elm-pc copy">
+          <small class="visible--pc copy">
             &copy; 2021 popos.work
           </small>
         </nav>

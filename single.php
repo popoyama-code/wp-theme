@@ -21,11 +21,13 @@
                     </time>
                 </div>
             </section>
+            <div class="separator"></div>
             <?php
             if ( comments_open() || get_comments_number() ) :
 				comments_template();
             endif;
             ?>
+            <div class="separator"></div>
             <?php get_template_part( 'inc/related', 'post' ); ?>
         </article>
     <?php endif; ?>
