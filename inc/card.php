@@ -1,4 +1,4 @@
-<figure class="card card--shadow">
+<figure class="card">
     <div class="card__thumbnail">
         <?php the_post_thumbnail('grid-thumbnail'); ?>
         <a href="<?php the_permalink(); ?>" class="card__overlay">

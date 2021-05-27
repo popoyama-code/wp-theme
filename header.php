@@ -12,12 +12,12 @@
     <div id="root">
       <header>
         <nav role="navigation" aria-label="main-nav" class="nav-collapse" id="primary-menu">
-          <div class="visible--pc logo">
+          <div class="logo visible--pc">
             <a class="blog-logo" href='<?php echo esc_url( home_url( '/' ) ); ?>' title='<?php echo esc_attr( get_bloginfo( 'title' ) ); ?>' rel='home'>
               <img class="logo__img" src="<?php bloginfo('template_directory'); ?>/img/logo.png">
             </a>
           </div>
-          <div class="visible--pc separator-head"></div>
+          <div class="separator-head visible--pc"></div>
           <?php 
           wp_nav_menu( array( 
             'theme_location' => 'main-menu',
@@ -25,16 +25,16 @@
             'fallback_cb' => ''
           ) ); 
           ?>
-          <div class="visible--pc separator-head"></div>
-          <div class="visible--pc sns">
-            <a class="sns__img-wrap" href="#">
+          <div class="separator-head visible--pc"></div>
+          <div class="sns">
+            <a class="sns__img-wrap visible--pc" href="#">
               <img class="sns__img" src="<?php bloginfo('template_directory'); ?>/img/logo_icon_twitter.png">
             </a>
-            <a class="sns__img-wrap" href="#">
+            <a class="sns__img-wrap visible--pc" href="#">
               <img class="sns__img" src="<?php bloginfo('template_directory'); ?>/img/logo_icon_fb.png">
             </a>
           </div>
-          <small class="visible--pc copy">
+          <small class="copy visible--pc">
             &copy; 2021 popos.work
           </small>
         </nav>

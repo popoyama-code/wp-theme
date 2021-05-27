@@ -23,8 +23,8 @@ a {
   color: var(--BK);
 }
 .visible {
-  &--pc{
-	  display: none;
+  &--pc {
+	  display: none !important;
   }
 }
 #root {
@@ -47,5 +47,10 @@ main {
 		-ms-flex-positive:1;
 		flex-grow:1;
 		padding: 3rem 0;
-	}	
+	}
+	.visible {
+		&--pc {
+			display: block !important;
+		}
+	}
 }
